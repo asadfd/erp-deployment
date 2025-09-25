@@ -28,7 +28,7 @@ services:
       - "8080:8080"
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-      - SPRING_DATASOURCE_URL=${DATABASE_URL}
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://${PGHOST}:${PGPORT}/${PGDATABASE}
       - SPRING_DATASOURCE_USERNAME=${PGUSER}
       - SPRING_DATASOURCE_PASSWORD=${PGPASSWORD}
     volumes:
