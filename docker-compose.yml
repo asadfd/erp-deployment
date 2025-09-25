@@ -2,7 +2,7 @@ version: "3.9"
 
 networks:
   erp-net:
-    driver: bridge
+    external: true
 
 services:
   postgres:
