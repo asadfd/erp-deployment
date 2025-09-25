@@ -1,3 +1,9 @@
+version: "3.9"
+
+networks:
+  erp-net:
+    driver: bridge
+
 services:
   postgres:
     image: postgres:15
@@ -10,6 +16,8 @@ services:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+    networks:
+      - erp-net
     restart: unless-stopped
 
   erp-app:
@@ -28,6 +36,8 @@ services:
     container_name: erp-custom-app
     depends_on:
       - postgres
+    networks:
+      - erp-net
     restart: unless-stopped
 
 volumes:
