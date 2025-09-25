@@ -1,0 +1,200 @@
+.employee-hours-report {
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.report-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.employee-hours-report h2 {
+    color: #333;
+    margin: 0;
+}
+
+.back-btn {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.back-btn:hover {
+    background-color: #5a6268;
+}
+
+.date-filters {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    align-items: flex-end;
+}
+
+.date-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.date-input label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #555;
+}
+
+.date-input input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.filter-btn {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.filter-btn:hover {
+    background-color: #0056b3;
+}
+
+.loading {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+}
+
+.error {
+    color: #dc3545;
+    padding: 10px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.report-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.report-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.report-table th,
+.report-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.report-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #495057;
+    position: sticky;
+    top: 0;
+}
+
+.report-table tbody tr:not(.details-row):hover {
+    background-color: #f8f9fa;
+}
+
+.amount {
+    font-family: monospace;
+    text-align: right;
+    color: #28a745;
+    font-weight: 600;
+}
+
+.details-btn {
+    padding: 5px 15px;
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background-color 0.3s;
+}
+
+.details-btn:hover {
+    background-color: #138496;
+}
+
+.details-row {
+    background-color: #f8f9fa;
+}
+
+.details-row td {
+    padding: 0;
+}
+
+.project-details {
+    padding: 20px;
+}
+
+.project-details h4 {
+    margin-bottom: 15px;
+    color: #495057;
+}
+
+.sub-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.sub-table th,
+.sub-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.sub-table th {
+    background-color: #e9ecef;
+    font-weight: 600;
+}
+
+.sub-table tbody tr:hover {
+    background-color: #f1f3f5;
+}
+
+.sub-total-row {
+    background-color: #e9ecef;
+}
+
+.sub-total-row td {
+    border-top: 2px solid #dee2e6;
+    font-weight: 600;
+}
+
+.total-row {
+    background-color: #e9ecef;
+    font-weight: 600;
+}
+
+.total-row td {
+    border-top: 2px solid #dee2e6;
+}

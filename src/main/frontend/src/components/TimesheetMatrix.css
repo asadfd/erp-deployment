@@ -1,0 +1,228 @@
+.timesheet-matrix {
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.timesheet-matrix h4 {
+    margin-top: 0;
+    color: #333;
+    border-bottom: 2px solid #6f42c1;
+    padding-bottom: 10px;
+}
+
+.matrix-info {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid #6f42c1;
+}
+
+.matrix-info p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.matrix-info small {
+    color: #6c757d;
+}
+
+.no-employees,
+.no-dates {
+    text-align: center;
+    color: #6c757d;
+    font-style: italic;
+    padding: 40px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.matrix-container {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.matrix-scroll {
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+.timesheet-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+}
+
+.timesheet-table th,
+.timesheet-table td {
+    border: 1px solid #ddd;
+    text-align: center;
+    vertical-align: middle;
+    padding: 8px;
+}
+
+.employee-header {
+    background: #343a40;
+    color: white;
+    min-width: 150px;
+    text-align: left;
+    position: sticky;
+    left: 0;
+    z-index: 2;
+}
+
+.date-header {
+    background: #6f42c1;
+    color: white;
+    min-width: 80px;
+    white-space: nowrap;
+}
+
+.date-header.non-editable {
+    background: #6c757d;
+}
+
+.total-header {
+    background: #28a745;
+    color: white;
+    min-width: 100px;
+}
+
+.date-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+.date-day {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.date-weekday {
+    font-size: 10px;
+    opacity: 0.9;
+}
+
+.employee-cell {
+    background: #f8f9fa;
+    text-align: left;
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    min-width: 150px;
+}
+
+.employee-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.employee-info strong {
+    color: #333;
+    font-size: 14px;
+}
+
+.emp-id {
+    color: #6c757d;
+    font-size: 12px;
+}
+
+.role {
+    color: #007bff;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.hours-cell {
+    background: white;
+    padding: 4px;
+}
+
+.hours-cell.non-editable {
+    background: #f5f5f5;
+}
+
+.hours-input {
+    width: 60px;
+    padding: 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.hours-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 3px rgba(0, 123, 255, 0.3);
+}
+
+.hours-input:disabled {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+}
+
+.total-cell {
+    background: #d4edda;
+    color: #155724;
+    font-weight: bold;
+}
+
+.daily-totals th {
+    background: #d1ecf1;
+    color: #0c5460;
+    font-weight: bold;
+}
+
+.daily-total-cell {
+    background: #d1ecf1;
+    color: #0c5460;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.grand-total {
+    background: #d4edda !important;
+    color: #155724 !important;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .timesheet-matrix {
+        padding: 10px;
+    }
+    
+    .matrix-info {
+        padding: 10px;
+    }
+    
+    .timesheet-table {
+        min-width: 600px;
+    }
+    
+    .employee-header,
+    .employee-cell {
+        min-width: 120px;
+    }
+    
+    .date-header {
+        min-width: 60px;
+    }
+    
+    .hours-input {
+        width: 50px;
+    }
+    
+    .date-day,
+    .date-weekday {
+        font-size: 10px;
+    }
+}

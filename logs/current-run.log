@@ -1,0 +1,744 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------------< [0;36morg.erp:ERPcustom[0;1m >--------------------------[m
+[[1;34mINFO[m] [1mBuilding ERPcustom 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m>>> [0;32mspring-boot-maven-plugin:3.2.0:run[m [1m(default-cli)[0;1m > [0;1mtest-compile[m @ [36mERPcustom[0;1m >>>[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mfrontend-maven-plugin:1.12.1:install-node-and-npm[m [1m(install-node-and-npm)[m @ [36mERPcustom[0;1m ---[m
+[[1;34mINFO[m] Node v18.17.0 is already installed.
+[[1;34mINFO[m] NPM 9.6.7 is already installed.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mfrontend-maven-plugin:1.12.1:npm[m [1m(npm-install)[m @ [36mERPcustom[0;1m ---[m
+[[1;34mINFO[m] Running 'npm install' in /mnt/c/Users/Asad Dimtimkar/IdeaProjects/ERPcustom/src/main/frontend
+[[1;34mINFO[m] 
+[[1;34mINFO[m] up to date, audited 1346 packages in 21s
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 270 packages are looking for funding
+[[1;34mINFO[m]   run `npm fund` for details
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 9 vulnerabilities (3 moderate, 6 high)
+[[1;34mINFO[m] 
+[[1;34mINFO[m] To address all issues (including breaking changes), run:
+[[1;34mINFO[m]   npm audit fix --force
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Run `npm audit` for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mfrontend-maven-plugin:1.12.1:npm[m [1m(npm-build)[m @ [36mERPcustom[0;1m ---[m
+[[1;34mINFO[m] Running 'npm run build' in /mnt/c/Users/Asad Dimtimkar/IdeaProjects/ERPcustom/src/main/frontend
+[[1;34mINFO[m] 
+[[1;34mINFO[m] > erp-frontend@1.0.0 build
+[[1;34mINFO[m] > react-scripts build
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Creating an optimized production build...
+[[1;34mINFO[m] Compiled successfully.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] File sizes after gzip:
+[[1;34mINFO[m] 
+[[1;34mINFO[m]   82.78 kB (+145 B)  build/static/js/main.c3841524.js
+[[1;34mINFO[m]   1.54 kB            build/static/css/main.788521f9.css
+[[1;34mINFO[m] 
+[[1;34mINFO[m] The project was built assuming it is hosted at /.
+[[1;34mINFO[m] You can control this with the homepage field in your package.json.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] The build folder is ready to be deployed.
+[[1;34mINFO[m] You may serve it with a static server:
+[[1;34mINFO[m] 
+[[1;34mINFO[m]   npm install -g serve
+[[1;34mINFO[m]   serve -s build
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Find out more about deployment here:
+[[1;34mINFO[m] 
+[[1;34mINFO[m]   https://cra.link/deployment
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.3.1:resources[m [1m(default-resources)[m @ [36mERPcustom[0;1m ---[m
+[[1;34mINFO[m] Copying 1 resource from src/main/resources to target/classes
+[[1;34mINFO[m] Copying 1 resource from src/main/resources to target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.3.1:copy-resources[m [1m(copy-react-build)[m @ [36mERPcustom[0;1m ---[m
+[[1;34mINFO[m] Copying 7 resources from src/main/frontend/build to target/classes/static
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.11.0:compile[m [1m(default-compile)[m @ [36mERPcustom[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module! :source
+[[1;34mINFO[m] Compiling 36 source files with javac [debug release 17] to target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.3.1:testResources[m [1m(default-testResources)[m @ [36mERPcustom[0;1m ---[m
+[[1;34mINFO[m] skip non existing resourceDirectory /mnt/c/Users/Asad Dimtimkar/IdeaProjects/ERPcustom/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.11.0:testCompile[m [1m(default-testCompile)[m @ [36mERPcustom[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module! :dependency
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m<<< [0;32mspring-boot-maven-plugin:3.2.0:run[m [1m(default-cli)[0;1m < [0;1mtest-compile[m @ [36mERPcustom[0;1m <<<[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspring-boot-maven-plugin:3.2.0:run[m [1m(default-cli)[m @ [36mERPcustom[0;1m ---[m
+[[1;34mINFO[m] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+00:39:05.538 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+00:39:06.012 [main] INFO  org.erp.ErpApplication - Starting ErpApplication using Java 17.0.16 with PID 2541 (/mnt/c/Users/Asad Dimtimkar/IdeaProjects/ERPcustom/target/classes started by asad in /mnt/c/Users/Asad Dimtimkar/IdeaProjects/ERPcustom)
+00:39:06.025 [main] DEBUG org.erp.ErpApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+00:39:06.030 [main] INFO  org.erp.ErpApplication - No active profile set, falling back to 1 default profile: "default"
+00:39:09.123 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+00:39:09.777 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 624 ms. Found 10 JPA repository interfaces.
+00:39:13.269 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+00:39:13.313 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+00:39:13.325 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+00:39:13.326 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+00:39:13.540 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:39:13.543 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7264 ms
+00:39:14.717 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+00:39:15.507 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+00:39:18.691 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+00:39:21.410 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+00:39:21.575 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:39:22.661 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3b3546a3
+00:39:22.671 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:39:22.843 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+00:39:30.152 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+00:39:30.306 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists employee_requests 
+       drop constraint if exists FKm3fgk3lfg9a02ijqx5soa881f
+Hibernate: 
+    alter table if exists employee_requests 
+       drop constraint if exists FKm3fgk3lfg9a02ijqx5soa881f
+00:39:30.323 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists employee_requests 
+       drop constraint if exists FKj5ty0vc8cfkdi4paa8k68w7py
+Hibernate: 
+    alter table if exists employee_requests 
+       drop constraint if exists FKj5ty0vc8cfkdi4paa8k68w7py
+00:39:30.331 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists notifications 
+       drop constraint if exists FKqqnsjxlwleyjbxlmm213jaj3f
+Hibernate: 
+    alter table if exists notifications 
+       drop constraint if exists FKqqnsjxlwleyjbxlmm213jaj3f
+00:39:30.336 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists notifications 
+       drop constraint if exists FKk90lo5unh6lgmmiifw2hkgh6b
+Hibernate: 
+    alter table if exists notifications 
+       drop constraint if exists FKk90lo5unh6lgmmiifw2hkgh6b
+00:39:30.342 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists project_employees 
+       drop constraint if exists FKm4eko765j3efjfhbps6j8pxnv
+Hibernate: 
+    alter table if exists project_employees 
+       drop constraint if exists FKm4eko765j3efjfhbps6j8pxnv
+00:39:30.347 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists project_employees 
+       drop constraint if exists FKt9kxewjtx1iqoxwasi3ma5e0t
+Hibernate: 
+    alter table if exists project_employees 
+       drop constraint if exists FKt9kxewjtx1iqoxwasi3ma5e0t
+00:39:30.353 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists timesheets 
+       drop constraint if exists FK2hwwbmujjb8y8qqkrxx9yog38
+Hibernate: 
+    alter table if exists timesheets 
+       drop constraint if exists FK2hwwbmujjb8y8qqkrxx9yog38
+00:39:30.359 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists timesheets 
+       drop constraint if exists FK5v0u4owb9l6pp1c47fm1y77vb
+Hibernate: 
+    alter table if exists timesheets 
+       drop constraint if exists FK5v0u4owb9l6pp1c47fm1y77vb
+00:39:30.365 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists user_roles 
+       drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+Hibernate: 
+    alter table if exists user_roles 
+       drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+00:39:30.371 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists user_roles 
+       drop constraint if exists FKhfh9dx7w3ubf1co1vdev94g3f
+Hibernate: 
+    alter table if exists user_roles 
+       drop constraint if exists FKhfh9dx7w3ubf1co1vdev94g3f
+00:39:30.378 [main] DEBUG org.hibernate.SQL - 
+    drop table if exists employee_requests cascade
+Hibernate: 
+    drop table if exists employee_requests cascade
+00:39:30.387 [main] DEBUG org.hibernate.SQL - 
+    drop table if exists employees cascade
+Hibernate: 
+    drop table if exists employees cascade
+00:39:30.395 [main] DEBUG org.hibernate.SQL - 
+    drop table if exists inventory cascade
+Hibernate: 
+    drop table if exists inventory cascade
+00:39:30.407 [main] DEBUG org.hibernate.SQL - 
+    drop table if exists inventory_requests cascade
+Hibernate: 
+    drop table if exists inventory_requests cascade
+00:39:30.413 [main] DEBUG org.hibernate.SQL - 
+    drop table if exists notifications cascade
+Hibernate: 
+    drop table if exists notifications cascade
+00:39:30.419 [main] DEBUG org.hibernate.SQL - 
+    drop table if exists project_employees cascade
+Hibernate: 
+    drop table if exists project_employees cascade
+00:39:30.425 [main] DEBUG org.hibernate.SQL - 
+    drop table if exists projects cascade
+Hibernate: 
+    drop table if exists projects cascade
+00:39:30.431 [main] DEBUG org.hibernate.SQL - 
+    drop table if exists roles cascade
+Hibernate: 
+    drop table if exists roles cascade
+00:39:30.436 [main] DEBUG org.hibernate.SQL - 
+    drop table if exists timesheets cascade
+Hibernate: 
+    drop table if exists timesheets cascade
+00:39:30.441 [main] DEBUG org.hibernate.SQL - 
+    drop table if exists user_roles cascade
+Hibernate: 
+    drop table if exists user_roles cascade
+00:39:30.446 [main] DEBUG org.hibernate.SQL - 
+    drop table if exists users cascade
+Hibernate: 
+    drop table if exists users cascade
+00:39:30.483 [main] DEBUG org.hibernate.SQL - 
+    create table employee_requests (
+        end_date date,
+        joining_date date not null,
+        salary numeric(38,2) not null,
+        approved_by bigint,
+        created_at timestamp(6) not null,
+        id bigserial not null,
+        processed_at timestamp(6),
+        requested_by bigint not null,
+        comments varchar(255),
+        emirates_id varchar(255) not null,
+        emp_id varchar(255) not null,
+        name varchar(255) not null,
+        passport_id varchar(255) not null,
+        phone_number varchar(255),
+        rejection_reason varchar(255),
+        status varchar(255) not null check (status in ('PENDING','APPROVED','REJECTED')),
+        primary key (id)
+    )
+Hibernate: 
+    create table employee_requests (
+        end_date date,
+        joining_date date not null,
+        salary numeric(38,2) not null,
+        approved_by bigint,
+        created_at timestamp(6) not null,
+        id bigserial not null,
+        processed_at timestamp(6),
+        requested_by bigint not null,
+        comments varchar(255),
+        emirates_id varchar(255) not null,
+        emp_id varchar(255) not null,
+        name varchar(255) not null,
+        passport_id varchar(255) not null,
+        phone_number varchar(255),
+        rejection_reason varchar(255),
+        status varchar(255) not null check (status in ('PENDING','APPROVED','REJECTED')),
+        primary key (id)
+    )
+00:39:30.514 [main] DEBUG org.hibernate.SQL - 
+    create table employees (
+        end_date date,
+        joining_date date not null,
+        salary numeric(10,2) not null,
+        id bigserial not null,
+        comments TEXT,
+        emirates_id varchar(255) not null unique,
+        emp_id varchar(255) not null unique,
+        name varchar(255) not null,
+        passport_id varchar(255) not null unique,
+        phone_number varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table employees (
+        end_date date,
+        joining_date date not null,
+        salary numeric(10,2) not null,
+        id bigserial not null,
+        comments TEXT,
+        emirates_id varchar(255) not null unique,
+        emp_id varchar(255) not null unique,
+        name varchar(255) not null,
+        passport_id varchar(255) not null unique,
+        phone_number varchar(255) not null,
+        primary key (id)
+    )
+00:39:30.557 [main] DEBUG org.hibernate.SQL - 
+    create table inventory (
+        created_date date not null,
+        expiry_date date not null,
+        per_quantity_price numeric(10,2) not null,
+        production_date date not null,
+        quantity integer not null,
+        total_price numeric(15,2) not null,
+        id bigserial not null,
+        bill_number varchar(255) not null,
+        inventory_id varchar(255) not null unique,
+        name varchar(255) not null,
+        supplier_name varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table inventory (
+        created_date date not null,
+        expiry_date date not null,
+        per_quantity_price numeric(10,2) not null,
+        production_date date not null,
+        quantity integer not null,
+        total_price numeric(15,2) not null,
+        id bigserial not null,
+        bill_number varchar(255) not null,
+        inventory_id varchar(255) not null unique,
+        name varchar(255) not null,
+        supplier_name varchar(255) not null,
+        primary key (id)
+    )
+00:39:30.588 [main] DEBUG org.hibernate.SQL - 
+    create table inventory_requests (
+        expiry_date date,
+        per_quantity_price numeric(10,2),
+        production_date date,
+        quantity integer,
+        total_price numeric(15,2),
+        approval_date timestamp(6),
+        id bigserial not null,
+        request_date timestamp(6) not null,
+        target_inventory_id bigint,
+        approved_by varchar(255),
+        bill_number varchar(255),
+        inventory_id varchar(255),
+        name varchar(255),
+        rejection_reason varchar(255),
+        request_type varchar(255) not null check (request_type in ('CREATE','UPDATE','DELETE')),
+        requested_by varchar(255) not null,
+        status varchar(255) not null check (status in ('PENDING','APPROVED','REJECTED')),
+        supplier_name varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    create table inventory_requests (
+        expiry_date date,
+        per_quantity_price numeric(10,2),
+        production_date date,
+        quantity integer,
+        total_price numeric(15,2),
+        approval_date timestamp(6),
+        id bigserial not null,
+        request_date timestamp(6) not null,
+        target_inventory_id bigint,
+        approved_by varchar(255),
+        bill_number varchar(255),
+        inventory_id varchar(255),
+        name varchar(255),
+        rejection_reason varchar(255),
+        request_type varchar(255) not null check (request_type in ('CREATE','UPDATE','DELETE')),
+        requested_by varchar(255) not null,
+        status varchar(255) not null check (status in ('PENDING','APPROVED','REJECTED')),
+        supplier_name varchar(255),
+        primary key (id)
+    )
+00:39:30.611 [main] DEBUG org.hibernate.SQL - 
+    create table notifications (
+        is_read boolean not null,
+        created_at timestamp(6) not null,
+        employee_request_id bigint,
+        id bigserial not null,
+        read_at timestamp(6),
+        recipient_id bigint not null,
+        message TEXT not null,
+        title varchar(255) not null,
+        type varchar(255) not null check (type in ('EMPLOYEE_REQUEST_APPROVED','EMPLOYEE_REQUEST_REJECTED','EMPLOYEE_REQUEST_CREATED')),
+        primary key (id)
+    )
+Hibernate: 
+    create table notifications (
+        is_read boolean not null,
+        created_at timestamp(6) not null,
+        employee_request_id bigint,
+        id bigserial not null,
+        read_at timestamp(6),
+        recipient_id bigint not null,
+        message TEXT not null,
+        title varchar(255) not null,
+        type varchar(255) not null check (type in ('EMPLOYEE_REQUEST_APPROVED','EMPLOYEE_REQUEST_REJECTED','EMPLOYEE_REQUEST_CREATED')),
+        primary key (id)
+    )
+00:39:30.636 [main] DEBUG org.hibernate.SQL - 
+    create table project_employees (
+        assigned_date date not null,
+        employee_id bigint not null,
+        id bigserial not null,
+        project_id bigint not null,
+        role_in_project varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    create table project_employees (
+        assigned_date date not null,
+        employee_id bigint not null,
+        id bigserial not null,
+        project_id bigint not null,
+        role_in_project varchar(255),
+        primary key (id)
+    )
+00:39:30.650 [main] DEBUG org.hibernate.SQL - 
+    create table projects (
+        end_date date not null,
+        per_day_rate numeric(10,2),
+        per_hour_rate numeric(10,2),
+        project_budget numeric(15,2),
+        start_date date not null,
+        id bigserial not null,
+        project_description varchar(1000),
+        project_type varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table projects (
+        end_date date not null,
+        per_day_rate numeric(10,2),
+        per_hour_rate numeric(10,2),
+        project_budget numeric(15,2),
+        start_date date not null,
+        id bigserial not null,
+        project_description varchar(1000),
+        project_type varchar(255) not null,
+        primary key (id)
+    )
+00:39:30.737 [main] DEBUG org.hibernate.SQL - 
+    create table roles (
+        id bigserial not null,
+        name varchar(255) not null unique,
+        primary key (id)
+    )
+Hibernate: 
+    create table roles (
+        id bigserial not null,
+        name varchar(255) not null unique,
+        primary key (id)
+    )
+00:39:30.766 [main] DEBUG org.hibernate.SQL - 
+    create table timesheets (
+        daily_rate numeric(10,2),
+        hourly_rate numeric(10,2),
+        hours_worked numeric(5,2),
+        total_amount numeric(10,2),
+        work_date date not null,
+        employee_id bigint not null,
+        id bigserial not null,
+        project_id bigint not null,
+        comments varchar(500),
+        primary key (id)
+    )
+Hibernate: 
+    create table timesheets (
+        daily_rate numeric(10,2),
+        hourly_rate numeric(10,2),
+        hours_worked numeric(5,2),
+        total_amount numeric(10,2),
+        work_date date not null,
+        employee_id bigint not null,
+        id bigserial not null,
+        project_id bigint not null,
+        comments varchar(500),
+        primary key (id)
+    )
+00:39:30.793 [main] DEBUG org.hibernate.SQL - 
+    create table user_roles (
+        role_id bigint not null,
+        user_id bigint not null,
+        primary key (role_id, user_id)
+    )
+Hibernate: 
+    create table user_roles (
+        role_id bigint not null,
+        user_id bigint not null,
+        primary key (role_id, user_id)
+    )
+00:39:30.813 [main] DEBUG org.hibernate.SQL - 
+    create table users (
+        enabled boolean not null,
+        id bigserial not null,
+        password varchar(255) not null,
+        username varchar(255) not null unique,
+        primary key (id)
+    )
+Hibernate: 
+    create table users (
+        enabled boolean not null,
+        id bigserial not null,
+        password varchar(255) not null,
+        username varchar(255) not null unique,
+        primary key (id)
+    )
+00:39:30.850 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists employee_requests 
+       add constraint FKm3fgk3lfg9a02ijqx5soa881f 
+       foreign key (approved_by) 
+       references users
+Hibernate: 
+    alter table if exists employee_requests 
+       add constraint FKm3fgk3lfg9a02ijqx5soa881f 
+       foreign key (approved_by) 
+       references users
+00:39:30.863 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists employee_requests 
+       add constraint FKj5ty0vc8cfkdi4paa8k68w7py 
+       foreign key (requested_by) 
+       references users
+Hibernate: 
+    alter table if exists employee_requests 
+       add constraint FKj5ty0vc8cfkdi4paa8k68w7py 
+       foreign key (requested_by) 
+       references users
+00:39:30.874 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists notifications 
+       add constraint FKqqnsjxlwleyjbxlmm213jaj3f 
+       foreign key (recipient_id) 
+       references users
+Hibernate: 
+    alter table if exists notifications 
+       add constraint FKqqnsjxlwleyjbxlmm213jaj3f 
+       foreign key (recipient_id) 
+       references users
+00:39:30.885 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists notifications 
+       add constraint FKk90lo5unh6lgmmiifw2hkgh6b 
+       foreign key (employee_request_id) 
+       references employee_requests
+Hibernate: 
+    alter table if exists notifications 
+       add constraint FKk90lo5unh6lgmmiifw2hkgh6b 
+       foreign key (employee_request_id) 
+       references employee_requests
+00:39:30.895 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists project_employees 
+       add constraint FKm4eko765j3efjfhbps6j8pxnv 
+       foreign key (employee_id) 
+       references employees
+Hibernate: 
+    alter table if exists project_employees 
+       add constraint FKm4eko765j3efjfhbps6j8pxnv 
+       foreign key (employee_id) 
+       references employees
+00:39:30.906 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists project_employees 
+       add constraint FKt9kxewjtx1iqoxwasi3ma5e0t 
+       foreign key (project_id) 
+       references projects
+Hibernate: 
+    alter table if exists project_employees 
+       add constraint FKt9kxewjtx1iqoxwasi3ma5e0t 
+       foreign key (project_id) 
+       references projects
+00:39:30.917 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists timesheets 
+       add constraint FK2hwwbmujjb8y8qqkrxx9yog38 
+       foreign key (employee_id) 
+       references employees
+Hibernate: 
+    alter table if exists timesheets 
+       add constraint FK2hwwbmujjb8y8qqkrxx9yog38 
+       foreign key (employee_id) 
+       references employees
+00:39:30.927 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists timesheets 
+       add constraint FK5v0u4owb9l6pp1c47fm1y77vb 
+       foreign key (project_id) 
+       references projects
+Hibernate: 
+    alter table if exists timesheets 
+       add constraint FK5v0u4owb9l6pp1c47fm1y77vb 
+       foreign key (project_id) 
+       references projects
+00:39:30.939 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists user_roles 
+       add constraint FKh8ciramu9cc9q3qcqiv4ue8a6 
+       foreign key (role_id) 
+       references roles
+Hibernate: 
+    alter table if exists user_roles 
+       add constraint FKh8ciramu9cc9q3qcqiv4ue8a6 
+       foreign key (role_id) 
+       references roles
+00:39:30.955 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists user_roles 
+       add constraint FKhfh9dx7w3ubf1co1vdev94g3f 
+       foreign key (user_id) 
+       references users
+Hibernate: 
+    alter table if exists user_roles 
+       add constraint FKhfh9dx7w3ubf1co1vdev94g3f 
+       foreign key (user_id) 
+       references users
+00:39:31.023 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+00:39:32.359 [main] INFO  org.springframework.data.jpa.repository.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+00:39:36.111 [main] INFO  org.erp.service.UserDetailsServiceImpl - UserDetailsServiceImpl initialized with UserRepository
+00:39:36.116 [main] INFO  org.erp.config.SecurityConfig - SecurityConfig initialized with UserDetailsService: UserDetailsServiceImpl
+00:39:36.128 [main] INFO  org.erp.config.SecurityConfig - PasswordEncoder configured: BCrypt with strength 12
+00:39:36.336 [main] DEBUG org.erp.config.SecurityConfig - Creating DaoAuthenticationProvider with custom UserDetailsService and BCrypt encoder
+00:39:36.476 [main] INFO  org.erp.config.SecurityConfig - DaoAuthenticationProvider configured successfully
+00:39:36.494 [main] INFO  org.erp.config.SecurityConfig - AuthenticationManager bean created successfully
+00:39:36.497 [main] INFO  org.erp.controller.AuthController - AuthController initialized with AuthenticationManager
+00:39:37.824 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+00:39:38.608 [main] INFO  org.erp.config.SecurityConfig - Configuring SecurityFilterChain with CSRF disabled and session-based authentication
+00:39:38.611 [main] DEBUG org.erp.config.SecurityConfig - CSRF protection disabled for API endpoints
+00:39:38.780 [main] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+00:39:39.731 [main] DEBUG org.erp.config.SecurityConfig - Authorization rules configured: public endpoints and authenticated API access
+00:39:39.740 [main] DEBUG org.erp.config.SecurityConfig - Session management configured: max 1 session per user, no session prevention
+00:39:39.741 [main] DEBUG org.erp.config.SecurityConfig - Logout configuration set: /api/auth/logout with session invalidation
+00:39:39.742 [main] INFO  org.erp.config.SecurityConfig - SecurityFilterChain configuration completed successfully
+00:39:39.962 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@13bea51d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@36142b6e, org.springframework.security.web.context.SecurityContextHolderFilter@4837c56d, org.springframework.security.web.header.HeaderWriterFilter@32f0a9c2, org.springframework.web.filter.CorsFilter@14c16388, org.springframework.security.web.authentication.logout.LogoutFilter@5df744d4, org.springframework.security.web.session.ConcurrentSessionFilter@31dd8a0b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@721fbae2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@130f8e03, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@39c8101c, org.springframework.security.web.session.SessionManagementFilter@5d233d7, org.springframework.security.web.access.ExceptionTranslationFilter@6319ea75, org.springframework.security.web.access.intercept.AuthorizationFilter@5cffd11d]
+00:39:41.362 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+00:39:41.389 [main] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+00:39:41.393 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+00:39:41.399 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists employee_requests 
+       drop constraint if exists FKm3fgk3lfg9a02ijqx5soa881f
+Hibernate: 
+    alter table if exists employee_requests 
+       drop constraint if exists FKm3fgk3lfg9a02ijqx5soa881f
+00:39:41.409 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists employee_requests 
+       drop constraint if exists FKj5ty0vc8cfkdi4paa8k68w7py
+Hibernate: 
+    alter table if exists employee_requests 
+       drop constraint if exists FKj5ty0vc8cfkdi4paa8k68w7py
+00:39:41.417 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists notifications 
+       drop constraint if exists FKqqnsjxlwleyjbxlmm213jaj3f
+Hibernate: 
+    alter table if exists notifications 
+       drop constraint if exists FKqqnsjxlwleyjbxlmm213jaj3f
+00:39:41.423 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists notifications 
+       drop constraint if exists FKk90lo5unh6lgmmiifw2hkgh6b
+Hibernate: 
+    alter table if exists notifications 
+       drop constraint if exists FKk90lo5unh6lgmmiifw2hkgh6b
+00:39:41.429 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists project_employees 
+       drop constraint if exists FKm4eko765j3efjfhbps6j8pxnv
+Hibernate: 
+    alter table if exists project_employees 
+       drop constraint if exists FKm4eko765j3efjfhbps6j8pxnv
+00:39:41.435 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists project_employees 
+       drop constraint if exists FKt9kxewjtx1iqoxwasi3ma5e0t
+Hibernate: 
+    alter table if exists project_employees 
+       drop constraint if exists FKt9kxewjtx1iqoxwasi3ma5e0t
+00:39:41.441 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists timesheets 
+       drop constraint if exists FK2hwwbmujjb8y8qqkrxx9yog38
+Hibernate: 
+    alter table if exists timesheets 
+       drop constraint if exists FK2hwwbmujjb8y8qqkrxx9yog38
+00:39:41.448 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists timesheets 
+       drop constraint if exists FK5v0u4owb9l6pp1c47fm1y77vb
+Hibernate: 
+    alter table if exists timesheets 
+       drop constraint if exists FK5v0u4owb9l6pp1c47fm1y77vb
+00:39:41.455 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists user_roles 
+       drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+Hibernate: 
+    alter table if exists user_roles 
+       drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+00:39:41.463 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists user_roles 
+       drop constraint if exists FKhfh9dx7w3ubf1co1vdev94g3f
+Hibernate: 
+    alter table if exists user_roles 
+       drop constraint if exists FKhfh9dx7w3ubf1co1vdev94g3f
+00:39:41.469 [main] DEBUG org.hibernate.SQL - 
+    drop table if exists employee_requests cascade
+Hibernate: 
+    drop table if exists employee_requests cascade
+00:39:41.476 [main] DEBUG org.hibernate.SQL - 
+    drop table if exists employees cascade
+Hibernate: 
+    drop table if exists employees cascade
+00:39:41.485 [main] DEBUG org.hibernate.SQL - 
+    drop table if exists inventory cascade
+Hibernate: 
+    drop table if exists inventory cascade
+00:39:41.492 [main] DEBUG org.hibernate.SQL - 
+    drop table if exists inventory_requests cascade
+Hibernate: 
+    drop table if exists inventory_requests cascade
+00:39:41.500 [main] DEBUG org.hibernate.SQL - 
+    drop table if exists notifications cascade
+Hibernate: 
+    drop table if exists notifications cascade
+00:39:41.508 [main] DEBUG org.hibernate.SQL - 
+    drop table if exists project_employees cascade
+Hibernate: 
+    drop table if exists project_employees cascade
+00:39:41.516 [main] DEBUG org.hibernate.SQL - 
+    drop table if exists projects cascade
+Hibernate: 
+    drop table if exists projects cascade
+00:39:41.524 [main] DEBUG org.hibernate.SQL - 
+    drop table if exists roles cascade
+Hibernate: 
+    drop table if exists roles cascade
+00:39:41.532 [main] DEBUG org.hibernate.SQL - 
+    drop table if exists timesheets cascade
+Hibernate: 
+    drop table if exists timesheets cascade
+00:39:41.541 [main] DEBUG org.hibernate.SQL - 
+    drop table if exists user_roles cascade
+Hibernate: 
+    drop table if exists user_roles cascade
+00:39:41.548 [main] DEBUG org.hibernate.SQL - 
+    drop table if exists users cascade
+Hibernate: 
+    drop table if exists users cascade
+00:39:41.564 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+00:39:41.573 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+00:39:41.645 [main] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+00:39:41.858 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  04:52 min
+[[1;34mINFO[m] Finished at: 2025-08-31T00:39:41+04:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.springframework.boot:spring-boot-maven-plugin:3.2.0:run[m [1m(default-cli)[m on project [36mERPcustom[m: [1;31mProcess terminated with exit code: 1[m -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

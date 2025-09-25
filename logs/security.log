@@ -1,0 +1,42 @@
+2025-08-26 15:22:55.298 [main] INFO  org.erp.service.UserDetailsServiceImpl - UserDetailsServiceImpl initialized with UserRepository
+2025-08-26 15:22:55.300 [main] INFO  org.erp.config.SecurityConfig - SecurityConfig initialized with UserDetailsService: UserDetailsServiceImpl
+2025-08-26 15:22:55.313 [main] INFO  org.erp.config.SecurityConfig - PasswordEncoder configured: BCrypt with strength 12
+2025-08-26 15:22:55.542 [main] DEBUG org.erp.config.SecurityConfig - Creating DaoAuthenticationProvider with custom UserDetailsService and BCrypt encoder
+2025-08-26 15:22:55.683 [main] INFO  org.erp.config.SecurityConfig - DaoAuthenticationProvider configured successfully
+2025-08-26 15:22:55.716 [main] INFO  org.erp.config.SecurityConfig - AuthenticationManager bean created successfully
+2025-08-26 15:22:55.718 [main] INFO  org.erp.controller.AuthController - AuthController initialized with AuthenticationManager
+2025-08-26 15:22:56.741 [main] INFO  org.erp.config.SecurityConfig - Configuring SecurityFilterChain with CSRF disabled and session-based authentication
+2025-08-26 15:22:56.743 [main] DEBUG org.erp.config.SecurityConfig - CSRF protection disabled for API endpoints
+2025-08-26 15:22:58.421 [main] DEBUG org.erp.config.SecurityConfig - Authorization rules configured: public endpoints, H2 console, and authenticated API access
+2025-08-26 15:22:58.422 [main] DEBUG org.erp.config.SecurityConfig - Headers configured to allow H2 console frames
+2025-08-26 15:22:58.427 [main] DEBUG org.erp.config.SecurityConfig - Session management configured: max 1 session per user, no session prevention
+2025-08-26 15:22:58.429 [main] DEBUG org.erp.config.SecurityConfig - Logout configuration set: /api/auth/logout with session invalidation
+2025-08-26 15:22:58.429 [main] INFO  org.erp.config.SecurityConfig - SecurityFilterChain configuration completed successfully
+2025-08-31 00:39:36.111 [main] INFO  org.erp.service.UserDetailsServiceImpl - UserDetailsServiceImpl initialized with UserRepository
+2025-08-31 00:39:36.116 [main] INFO  org.erp.config.SecurityConfig - SecurityConfig initialized with UserDetailsService: UserDetailsServiceImpl
+2025-08-31 00:39:36.128 [main] INFO  org.erp.config.SecurityConfig - PasswordEncoder configured: BCrypt with strength 12
+2025-08-31 00:39:36.336 [main] DEBUG org.erp.config.SecurityConfig - Creating DaoAuthenticationProvider with custom UserDetailsService and BCrypt encoder
+2025-08-31 00:39:36.476 [main] INFO  org.erp.config.SecurityConfig - DaoAuthenticationProvider configured successfully
+2025-08-31 00:39:36.494 [main] INFO  org.erp.config.SecurityConfig - AuthenticationManager bean created successfully
+2025-08-31 00:39:36.497 [main] INFO  org.erp.controller.AuthController - AuthController initialized with AuthenticationManager
+2025-08-31 00:39:38.608 [main] INFO  org.erp.config.SecurityConfig - Configuring SecurityFilterChain with CSRF disabled and session-based authentication
+2025-08-31 00:39:38.611 [main] DEBUG org.erp.config.SecurityConfig - CSRF protection disabled for API endpoints
+2025-08-31 00:39:39.731 [main] DEBUG org.erp.config.SecurityConfig - Authorization rules configured: public endpoints and authenticated API access
+2025-08-31 00:39:39.740 [main] DEBUG org.erp.config.SecurityConfig - Session management configured: max 1 session per user, no session prevention
+2025-08-31 00:39:39.741 [main] DEBUG org.erp.config.SecurityConfig - Logout configuration set: /api/auth/logout with session invalidation
+2025-08-31 00:39:39.742 [main] INFO  org.erp.config.SecurityConfig - SecurityFilterChain configuration completed successfully
+2025-08-31 00:39:39.962 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@13bea51d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@36142b6e, org.springframework.security.web.context.SecurityContextHolderFilter@4837c56d, org.springframework.security.web.header.HeaderWriterFilter@32f0a9c2, org.springframework.web.filter.CorsFilter@14c16388, org.springframework.security.web.authentication.logout.LogoutFilter@5df744d4, org.springframework.security.web.session.ConcurrentSessionFilter@31dd8a0b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@721fbae2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@130f8e03, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@39c8101c, org.springframework.security.web.session.SessionManagementFilter@5d233d7, org.springframework.security.web.access.ExceptionTranslationFilter@6319ea75, org.springframework.security.web.access.intercept.AuthorizationFilter@5cffd11d]
+2025-08-31 01:24:13.161 [main] INFO  org.erp.service.UserDetailsServiceImpl - UserDetailsServiceImpl initialized with UserRepository
+2025-08-31 01:24:13.165 [main] INFO  org.erp.config.SecurityConfig - SecurityConfig initialized with UserDetailsService: UserDetailsServiceImpl
+2025-08-31 01:24:13.177 [main] INFO  org.erp.config.SecurityConfig - PasswordEncoder configured: BCrypt with strength 12
+2025-08-31 01:24:13.404 [main] DEBUG org.erp.config.SecurityConfig - Creating DaoAuthenticationProvider with custom UserDetailsService and BCrypt encoder
+2025-08-31 01:24:13.587 [main] INFO  org.erp.config.SecurityConfig - DaoAuthenticationProvider configured successfully
+2025-08-31 01:24:13.608 [main] INFO  org.erp.config.SecurityConfig - AuthenticationManager bean created successfully
+2025-08-31 01:24:13.610 [main] INFO  org.erp.controller.AuthController - AuthController initialized with AuthenticationManager
+2025-08-31 01:24:15.415 [main] INFO  org.erp.config.SecurityConfig - Configuring SecurityFilterChain with CSRF disabled and session-based authentication
+2025-08-31 01:24:15.417 [main] DEBUG org.erp.config.SecurityConfig - CSRF protection disabled for API endpoints
+2025-08-31 01:24:16.593 [main] DEBUG org.erp.config.SecurityConfig - Authorization rules configured: public endpoints and authenticated API access
+2025-08-31 01:24:16.598 [main] DEBUG org.erp.config.SecurityConfig - Session management configured: max 1 session per user, no session prevention
+2025-08-31 01:24:16.599 [main] DEBUG org.erp.config.SecurityConfig - Logout configuration set: /api/auth/logout with session invalidation
+2025-08-31 01:24:16.599 [main] INFO  org.erp.config.SecurityConfig - SecurityFilterChain configuration completed successfully
+2025-08-31 01:24:16.769 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3bc1ed53, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4037fcc, org.springframework.security.web.context.SecurityContextHolderFilter@4288d7b6, org.springframework.security.web.header.HeaderWriterFilter@3413a3a6, org.springframework.web.filter.CorsFilter@8aa77a4, org.springframework.security.web.authentication.logout.LogoutFilter@4ddb2c51, org.springframework.security.web.session.ConcurrentSessionFilter@53309bfd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4169db10, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@270b527f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6d81522b, org.springframework.security.web.session.SessionManagementFilter@6b7b046, org.springframework.security.web.access.ExceptionTranslationFilter@1fa67a80, org.springframework.security.web.access.intercept.AuthorizationFilter@708f8545]
