@@ -5,20 +5,20 @@ networks:
     external: true
 
 services:
-  postgres:
-    image: postgres:15
-    container_name: erp-postgres
-    environment:
-      POSTGRES_DB: erpdb
-      POSTGRES_USER: erp_user
-      POSTGRES_PASSWORD: erp_password
-    ports:
-      - "5432:5432"
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-    networks:
-      - erp-net
-    restart: unless-stopped
+#  postgres:
+#    image: postgres:15
+#    container_name: erp-postgres
+#    environment:
+#      POSTGRES_DB: erpdb
+#      POSTGRES_USER: erp_user
+#      POSTGRES_PASSWORD: erp_password
+#    ports:
+#      - "5432:5432"
+#    volumes:
+#      - postgres_data:/var/lib/postgresql/data
+#    networks:
+#      - erp-net
+#    restart: unless-stopped
 
   erp-app:
     build:
@@ -28,9 +28,9 @@ services:
       - "8080:8080"
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/erpdb
-      - SPRING_DATASOURCE_USERNAME=erp_user
-      - SPRING_DATASOURCE_PASSWORD=erp_password
+      - SPRING_DATASOURCE_URL=${DATABASE_URL}
+      - SPRING_DATASOURCE_USERNAME=${PGUSER}
+      - SPRING_DATASOURCE_PASSWORD=${PGPASSWORD}
     volumes:
       - erp_uploads:/app/uploads
     container_name: erp-custom-app
