@@ -1,6 +1,7 @@
 package org.erp.entity;
 
 import jakarta.persistence.*;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -55,6 +56,7 @@ public class MaterialRequestForm {
     private Boolean requiresSuperadmin = false;
     
     @OneToMany(mappedBy = "materialRequestForm", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JsonManagedReference
     private List<MRFItem> items = new ArrayList<>();
     
     public enum MRFStatus {
