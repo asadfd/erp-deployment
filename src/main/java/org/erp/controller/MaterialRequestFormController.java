@@ -4,6 +4,7 @@ import org.erp.entity.MaterialRequestForm;
 import org.erp.entity.MRFItem;
 import org.erp.service.MaterialRequestFormService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
@@ -20,7 +21,7 @@ public class MaterialRequestFormController {
     private MaterialRequestFormService mrfService;
     
     @GetMapping
-    @PreAuthorize("hasRole('PROJECTMANAGER')")
+    @PreAuthorize("hasRole('PROJECTMANAGER') or hasRole('ADMIN') or hasRole('SUPER_ADMIN')")
     public ResponseEntity<List<MaterialRequestForm>> getAllMRFs() {
         try {
             List<MaterialRequestForm> mrfs = mrfService.getAllMRFs();
@@ -31,7 +32,7 @@ public class MaterialRequestFormController {
     }
     
     @GetMapping("/{id}")
-    @PreAuthorize("hasRole('PROJECTMANAGER')")
+    @PreAuthorize("hasRole('PROJECTMANAGER') or hasRole('ADMIN') or hasRole('SUPER_ADMIN')")
     public ResponseEntity<MaterialRequestForm> getMRFById(@PathVariable Long id) {
         try {
             Optional<MaterialRequestForm> mrf = mrfService.getMRFById(id);
@@ -46,7 +47,7 @@ public class MaterialRequestFormController {
     }
     
     @GetMapping("/number/{mrfNumber}")
-    @PreAuthorize("hasRole('PROJECTMANAGER')")
+    @PreAuthorize("hasRole('PROJECTMANAGER') or hasRole('ADMIN') or hasRole('SUPER_ADMIN')")
     public ResponseEntity<MaterialRequestForm> getMRFByNumber(@PathVariable String mrfNumber) {
         try {
             Optional<MaterialRequestForm> mrf = mrfService.getMRFByNumber(mrfNumber);
@@ -61,7 +62,7 @@ public class MaterialRequestFormController {
     }
     
     @GetMapping("/my")
-    @PreAuthorize("hasRole('PROJECTMANAGER')")
+    @PreAuthorize("hasRole('PROJECTMANAGER') or hasRole('ADMIN') or hasRole('SUPER_ADMIN')")
     public ResponseEntity<List<MaterialRequestForm>> getMyMRFs(Authentication auth) {
         try {
             List<MaterialRequestForm> mrfs = mrfService.getUserMRFs(auth.getName());
@@ -122,7 +123,7 @@ public class MaterialRequestFormController {
     
     @GetMapping("/pending")
     @PreAuthorize("hasRole('ADMIN') or hasRole('SUPER_ADMIN')")
-    public ResponseEntity<List<MaterialRequestForm>> getPendingMRFs(Authentication auth) {
+    public ResponseEntity<?> getPendingMRFs(Authentication auth) {
         try {
             List<MaterialRequestForm> pendingMRFs;
             
@@ -140,7 +141,9 @@ public class MaterialRequestFormController {
             
             return ResponseEntity.ok(pendingMRFs);
         } catch (Exception e) {
-            return ResponseEntity.badRequest().build();
+            e.printStackTrace(); // Log the error for debugging
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body("Error fetching pending MRFs: " + e.getMessage());
         }
     }
     
