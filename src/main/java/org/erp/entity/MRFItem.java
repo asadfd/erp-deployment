@@ -1,6 +1,7 @@
 package org.erp.entity;
 
 import jakarta.persistence.*;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import java.math.BigDecimal;
 
 @Entity
@@ -28,6 +29,7 @@ public class MRFItem {
     
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "mrf_id")
+    @JsonBackReference
     private MaterialRequestForm materialRequestForm;
     
     public MRFItem() {}
