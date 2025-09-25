@@ -25,32 +25,39 @@ public class MaterialRequestFormService {
     @Autowired
     private NotificationService notificationService;
     
+    @Transactional(readOnly = true)
     public List<MaterialRequestForm> getAllMRFs() {
         return mrfRepository.findAll();
     }
     
+    @Transactional(readOnly = true)
     public Optional<MaterialRequestForm> getMRFById(Long id) {
         return mrfRepository.findById(id);
     }
     
+    @Transactional(readOnly = true)
     public Optional<MaterialRequestForm> getMRFByNumber(String mrfNumber) {
         return mrfRepository.findByMrfNumber(mrfNumber);
     }
     
+    @Transactional(readOnly = true)
     public List<MaterialRequestForm> getPendingMRFs() {
         return mrfRepository.findByStatus(MaterialRequestForm.MRFStatus.PENDING);
     }
     
+    @Transactional(readOnly = true)
     public List<MaterialRequestForm> getPendingMRFsForAdmin() {
         return mrfRepository.findByStatusAndRequiresSuperadmin(
             MaterialRequestForm.MRFStatus.PENDING, false);
     }
     
+    @Transactional(readOnly = true)
     public List<MaterialRequestForm> getPendingMRFsForSuperAdmin() {
         return mrfRepository.findByStatusAndRequiresSuperadmin(
             MaterialRequestForm.MRFStatus.PENDING, true);
     }
     
+    @Transactional(readOnly = true)
     public List<MaterialRequestForm> getUserMRFs(String username) {
         return mrfRepository.findByRequestedByOrderByCreationDateDesc(username);
     }
