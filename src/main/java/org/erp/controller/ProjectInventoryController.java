@@ -19,7 +19,6 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/projects/{projectId}/inventory")
-@CrossOrigin(origins = "http://localhost:3000")
 public class ProjectInventoryController {
     
     @Autowired

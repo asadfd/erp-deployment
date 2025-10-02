@@ -1,0 +1,35 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: erp-postgres
+    environment:
+      POSTGRES_DB: erpdb
+      POSTGRES_USER: erp_user
+      POSTGRES_PASSWORD: erp_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  erp-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/erpdb
+      - SPRING_DATASOURCE_USERNAME=erp_user
+      - SPRING_DATASOURCE_PASSWORD=erp_password
+    volumes:
+      - erp_uploads:/app/uploads
+    container_name: erp-custom-app
+    depends_on:
+      - postgres
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  erp_uploads:

@@ -14,6 +14,10 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.CorsConfigurationSource;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
+import java.util.Arrays;
 
 @Configuration
 @EnableWebSecurity
@@ -34,6 +38,7 @@ public class SecurityConfig {
         logger.info("Configuring SecurityFilterChain with CSRF disabled and session-based authentication");
         
         http
+            .cors(cors -> cors.configurationSource(corsConfigurationSource()))
             .csrf(csrf -> {
                 csrf.disable();
                 logger.debug("CSRF protection disabled for API endpoints");
@@ -86,5 +91,47 @@ public class SecurityConfig {
         AuthenticationManager manager = config.getAuthenticationManager();
         logger.info("AuthenticationManager bean created successfully");
         return manager;
+    }
+
+    @Bean
+    public CorsConfigurationSource corsConfigurationSource() {
+        logger.info("Configuring CORS for Railway deployment");
+        
+        CorsConfiguration configuration = new CorsConfiguration();
+        
+        // Allow Railway production domain and localhost for development
+        configuration.setAllowedOrigins(Arrays.asList(
+            "https://erp-deployment-production.up.railway.app",
+            "http://localhost:3000",
+            "http://localhost:8080"
+        ));
+        
+        // Allow all common HTTP methods
+        configuration.setAllowedMethods(Arrays.asList(
+            "GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"
+        ));
+        
+        // Allow all headers that might be sent by the frontend
+        configuration.setAllowedHeaders(Arrays.asList(
+            "Authorization", "Cache-Control", "Content-Type", "Accept", 
+            "X-Requested-With", "Access-Control-Request-Method", 
+            "Access-Control-Request-Headers"
+        ));
+        
+        // Allow credentials (important for session-based auth)
+        configuration.setAllowCredentials(true);
+        
+        // Cache preflight requests for 1 hour
+        configuration.setMaxAge(3600L);
+        
+        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+        
+        // Apply CORS configuration to all API endpoints
+        source.registerCorsConfiguration("/api/**", configuration);
+        
+        logger.info("CORS configuration completed: origins={}, methods={}, credentials=true", 
+                   configuration.getAllowedOrigins(), configuration.getAllowedMethods());
+        
+        return source;
     }
 }

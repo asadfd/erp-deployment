@@ -107,7 +107,7 @@ public class DataInitializer implements CommandLineRunner {
             logger.debug("Role HRMANAGER already exists");
         }
         
-        // Create PROJECTMGR role
+     /*   // Create PROJECTMGR role
         if (!roleRepository.findByName("PROJECTMGR").isPresent()) {
             Role projectMgrRole = new Role();
             projectMgrRole.setName("PROJECTMGR");
@@ -115,7 +115,7 @@ public class DataInitializer implements CommandLineRunner {
             logger.info("Created role: PROJECTMGR");
         } else {
             logger.debug("Role PROJECTMGR already exists");
-        }
+        }*/
         
         // Create PROJECTMANAGER role
         if (!roleRepository.findByName("PROJECTMANAGER").isPresent()) {
