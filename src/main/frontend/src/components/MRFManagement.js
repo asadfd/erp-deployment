@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import MRFForm from './MRFForm';
 import MRFList from './MRFList';
 import MRFApprovalDashboard from './MRFApprovalDashboard';
 
 const MRFManagement = ({ onBack }) => {
+    const navigate = useNavigate();
     const [currentView, setCurrentView] = useState('main');
     const [editingMRF, setEditingMRF] = useState(null);
     const [userRoles, setUserRoles] = useState([]);
@@ -233,7 +235,7 @@ const MRFManagement = ({ onBack }) => {
 
                 <div style={buttonRowStyle}>
                     <button
-                        onClick={onBack}
+                        onClick={() => navigate('/dashboard')}
                         style={backButtonStyle}
                     >
                         Back to Dashboard

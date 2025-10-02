@@ -41,9 +41,9 @@ const EmployeeHoursReport = () => {
     };
 
     const formatCurrency = (amount) => {
-        return new Intl.NumberFormat('en-US', {
+        return new Intl.NumberFormat('en-AE', {
             style: 'currency',
-            currency: 'USD'
+            currency: 'AED'
         }).format(amount || 0);
     };
 

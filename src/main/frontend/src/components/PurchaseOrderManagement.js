@@ -82,9 +82,9 @@ const PurchaseOrderManagement = () => {
     };
 
     const formatCurrency = (amount) => {
-        return new Intl.NumberFormat('en-US', {
+        return new Intl.NumberFormat('en-AE', {
             style: 'currency',
-            currency: 'USD',
+            currency: 'AED',
             minimumFractionDigits: 2
         }).format(amount || 0);
     };
@@ -450,7 +450,7 @@ const PODetailsModal = ({ po, onClose, onStatusUpdate, getProjectName }) => {
                         <p><strong>Supplier:</strong> {po.supplierName}</p>
                         <p><strong>Contact:</strong> {po.supplierContact || 'N/A'}</p>
                         <p><strong>Email:</strong> {po.supplierEmail || 'N/A'}</p>
-                        <p><strong>Total Amount:</strong> <strong style={{ color: '#007bff' }}>{new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(po.totalAmount)}</strong></p>
+                        <p><strong>Total Amount:</strong> <strong style={{ color: '#007bff' }}>{formatCurrency(po.totalAmount)}</strong></p>
                     </div>
                     <div>
                         <h4>Status & Dates</h4>
@@ -500,8 +500,8 @@ const PODetailsModal = ({ po, onClose, onStatusUpdate, getProjectName }) => {
                                     <tr key={item.id}>
                                         <td style={{ padding: '8px', border: '1px solid #ddd' }}>{item.inventory?.name}</td>
                                         <td style={{ padding: '8px', border: '1px solid #ddd' }}>{item.quantityOrdered}</td>
-                                        <td style={{ padding: '8px', border: '1px solid #ddd' }}>{new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(item.unitPrice)}</td>
-                                        <td style={{ padding: '8px', border: '1px solid #ddd' }}>{new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(item.totalPrice)}</td>
+                                        <td style={{ padding: '8px', border: '1px solid #ddd' }}>{formatCurrency(item.unitPrice)}</td>
+                                        <td style={{ padding: '8px', border: '1px solid #ddd' }}>{formatCurrency(item.totalPrice)}</td>
                                     </tr>
                                 ))}
                             </tbody>

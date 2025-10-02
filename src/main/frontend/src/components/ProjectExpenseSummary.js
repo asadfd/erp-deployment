@@ -13,15 +13,23 @@ const ProjectExpenseSummary = ({ projectId }) => {
         }
     }, [projectId]);
 
+    // Separate useEffect to handle project-dependent calculations
+    useEffect(() => {
+        if (project && projectId) {
+            fetchDailyStatistics();
+        }
+    }, [project?.perHourRate, project?.perDayRate, project?.startDate, project?.endDate]);
+
     const fetchExpenseData = async () => {
         setLoading(true);
         try {
+            // First fetch project details, then fetch other data that depends on it
+            await fetchProjectDetails();
             await Promise.all([
-                fetchProjectDetails(),
                 fetchProjectExpense(),
-                fetchExpenseBreakdown(),
-                fetchDailyStatistics()
+                fetchExpenseBreakdown()
             ]);
+            // Daily statistics will be fetched by the separate useEffect when project data is ready
         } catch (error) {
             console.error('Error fetching expense data:', error);
         } finally {
@@ -72,7 +80,7 @@ const ProjectExpenseSummary = ({ projectId }) => {
     };
 
     const fetchDailyStatistics = async () => {
-        if (!project) return;
+        if (!project || !projectId) return;
         
         try {
             const start = new Date(project.startDate || Date.now());
@@ -116,9 +124,9 @@ const ProjectExpenseSummary = ({ projectId }) => {
     };
 
     const formatCurrency = (amount) => {
-        return new Intl.NumberFormat('en-US', {
+        return new Intl.NumberFormat('en-AE', {
             style: 'currency',
-            currency: 'USD',
+            currency: 'AED',
             minimumFractionDigits: 2
         }).format(amount || 0);
     };
